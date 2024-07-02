@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MCLIN - Create Account</title>
+    <title>MCLIN - Sign In</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -38,8 +38,7 @@
             margin-bottom: 0.5rem;
             font-weight: 700;
         }
-        .container input,
-        .container select {
+        .container input {
             width: 100%;
             padding: 0.5rem;
             margin-bottom: 1rem;
@@ -59,15 +58,15 @@
         .container button:hover {
             background: #0056b3;
         }
-        .container .login-link {
+        .container .form-links {
             text-align: center;
             margin-top: 1rem;
         }
-        .container .login-link a {
+        .container .form-links a {
             color: #007bff;
             text-decoration: none;
         }
-        .container .login-link a:hover {
+        .container .form-links a:hover {
             text-decoration: underline;
         }
     </style>
@@ -76,37 +75,23 @@
 
 <div class="container">
     <h1>LYNE</h1>
-    <p>Enter your personal details to create account and only takes a minute</p>
+    <p>Welcome back!<br>Please sign in to continue.</p>
     <form>
-        <label for="full-name">Full Name</label>
-        <input type="text" id="full-name" placeholder="Enter your Full Names">
-
         <label for="username">Username</label>
         <input type="text" id="username" placeholder="Enter your Username">
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your Email">
-
-        <label for="phone">Mobile Number</label>
-        <div style="display: flex; gap: 0.5rem;">
-            <select id="country" style="flex: 1;">
-                <option value="">Please Select Country</option>
-                <option value="KE">Kenya</option>
-                <option value="US">United States</option>
-                <option value="UK">United Kingdom</option>
-                <option value="CA">Canada</option>
-                <!-- Add more countries as needed -->
-            </select>
-            <input type="text" id="phone" placeholder="Start with 07..." style="flex: 2;">
-        </div>
 
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Enter your password">
 
-        <button type="submit">Create Account</button>
+        <div class="form-links">
+            <a href="#forgot-password">Forgot password?</a>
+        </div>
 
-        <div class="login-link">
-            <p>Already have an account? <a href="http://127.0.0.1:5500/login.html">Login</a></p>
+        <button type="submit">Sign In</button>
+
+        <div class="form-links">
+            <p>Don't have an account? <a href="http://127.0.0.1:5500/project/register.html">Create an Account</a></p>
+       
         </div>
     </form>
 </div>
